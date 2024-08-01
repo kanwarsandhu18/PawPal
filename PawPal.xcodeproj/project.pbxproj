@@ -15,6 +15,9 @@
 		E84FA5F12C5C034100B35CCC /* PawPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA5F02C5C034100B35CCC /* PawPalUITests.swift */; };
 		E84FA5F32C5C034100B35CCC /* PawPalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA5F22C5C034100B35CCC /* PawPalUITestsLaunchTests.swift */; };
 		E84FA6022C5C09F600B35CCC /* PetSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA6012C5C09F600B35CCC /* PetSelection.swift */; };
+		E84FA6042C5C211C00B35CCC /* BreedGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA6032C5C211C00B35CCC /* BreedGridView.swift */; };
+		E84FA6062C5C213B00B35CCC /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA6052C5C213B00B35CCC /* Breed.swift */; };
+		E84FA6082C5C24AB00B35CCC /* BreedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA6072C5C24AB00B35CCC /* BreedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		E84FA5F02C5C034100B35CCC /* PawPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawPalUITests.swift; sourceTree = "<group>"; };
 		E84FA5F22C5C034100B35CCC /* PawPalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawPalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E84FA6012C5C09F600B35CCC /* PetSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSelection.swift; sourceTree = "<group>"; };
+		E84FA6032C5C211C00B35CCC /* BreedGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedGridView.swift; sourceTree = "<group>"; };
+		E84FA6052C5C213B00B35CCC /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		E84FA6072C5C24AB00B35CCC /* BreedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				E84FA5D42C5C034000B35CCC /* PawPalApp.swift */,
 				E84FA5D62C5C034000B35CCC /* ContentView.swift */,
+				E84FA6032C5C211C00B35CCC /* BreedGridView.swift */,
+				E84FA6052C5C213B00B35CCC /* Breed.swift */,
+				E84FA6072C5C24AB00B35CCC /* BreedView.swift */,
 				E84FA6012C5C09F600B35CCC /* PetSelection.swift */,
 				E84FA5D82C5C034100B35CCC /* Assets.xcassets */,
 				E84FA5DA2C5C034100B35CCC /* PawPal.entitlements */,
@@ -263,7 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E84FA5D72C5C034000B35CCC /* ContentView.swift in Sources */,
+				E84FA6082C5C24AB00B35CCC /* BreedView.swift in Sources */,
+				E84FA6042C5C211C00B35CCC /* BreedGridView.swift in Sources */,
 				E84FA5D52C5C034000B35CCC /* PawPalApp.swift in Sources */,
+				E84FA6062C5C213B00B35CCC /* Breed.swift in Sources */,
 				E84FA6022C5C09F600B35CCC /* PetSelection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
