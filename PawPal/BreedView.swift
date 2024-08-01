@@ -17,6 +17,7 @@ struct BreedView: View {
             Text(breed.name)
                 .font((.system(size: 18, weight: .semibold , design: .default)))
         }
+        .padding()
     }
 }
 

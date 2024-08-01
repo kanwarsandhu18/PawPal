@@ -7,57 +7,66 @@
 
 import Foundation
 
-struct Breed{
+struct Breed :  Hashable ,Identifiable{
+    let id = UUID()
     let name: String
     let imageName : String
     let urlString : String
     let description : String
 }
 
+struct breedNames {
+let Breed: String
+}
+
+let Dog = breedNames(Breed: "Dog")
+let Cat = breedNames(Breed: "Cat")
+
 struct MockData {
     static let mockBreed = Breed(name:"Siberian Husky", imageName: "husky" , urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule", description: "The Siberian Husky is a striking and energetic dog breed known for its stunning appearance and friendly nature. With their thick double coat, erect triangular ears, and distinctive facial masks, Huskies are easily recognizable. They are medium-sized dogs with a strong, athletic build, originally bred by the Chukchi people of Siberia for sledding and endurance. Known for their high energy levels, intelligence, and playful demeanor, Huskies are also quite vocal and can be a bit independent. They thrive in active households and require regular exercise and mental stimulation to stay happy and healthy.")
     static let dogBreeds = [
-        Breed(name:"Siberian Husky", imageName: "test" , urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule", description: "The Siberian Husky is a striking and energetic dog breed known for its stunning appearance and friendly nature. With their thick double coat, erect triangular ears, and distinctive facial masks, Huskies are easily recognizable. They are medium-sized dogs with a strong, athletic build, originally bred by the Chukchi people of Siberia for sledding and endurance. Known for their high energy levels, intelligence, and playful demeanor, Huskies are also quite vocal and can be a bit independent. They thrive in active households and require regular exercise and mental stimulation to stay happy and healthy.") ,
+        Breed(name:"Siberian Husky", imageName: "husky" , urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule", description: "The Siberian Husky is a striking and energetic dog breed known for its stunning appearance and friendly nature. With their thick double coat, erect triangular ears, and distinctive facial masks, Huskies are easily recognizable. They are medium-sized dogs with a strong, athletic build, originally bred by the Chukchi people of Siberia for sledding and endurance. Known for their high energy levels, intelligence, and playful demeanor, Huskies are also quite vocal and can be a bit independent. They thrive in active households and require regular exercise and mental stimulation to stay happy and healthy.") ,
         Breed(name: "Golden Retriever",
-                  imageName: "test",
+                  imageName: "golden",
                   urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule",
                   description: "Golden Retrievers are friendly, intelligent, and devoted dogs with a beautiful golden, wavy coat. They are known for their patience and are often great with children, making them ideal family pets. Their eagerness to please and high energy levels also make them excellent candidates for various dog sports and activities."
             ),
             Breed(name: "German Shepherd",
-                  imageName: "test",
+                  imageName: "german",
                   urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule",
                   description: "German Shepherds are versatile, courageous, and highly intelligent dogs with a strong, athletic build and distinctive black and tan coat. They are often used in police, military, and search and rescue roles due to their trainability and protective instincts. They thrive on having a job to do and make loyal family companions."
             ),
             Breed(name: "Labrador Retriever",
-                  imageName: "test",
+                  imageName: "labra",
                   urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule",
                   description: "Labrador Retrievers are known for their friendly, outgoing nature and high energy levels. With their short, dense coat and strong build, they excel in various roles including service and therapy work. Their love for play and their gentle temperament make them fantastic family pets and great with children."
             ),
-            Breed(name: "Beagle",
-                  imageName: "test",
-                  urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule",
-                  description: "Beagles are small to medium-sized dogs with a keen sense of smell and an affectionate disposition. Their short coat and expressive eyes make them endearing. They are energetic and curious, making them excellent family pets and great with children. Beagles require regular exercise to manage their high energy levels and love for exploration."
-            ),
+            
             Breed(name: "Poodle",
-                  imageName: "test",
+                  imageName: "poodle",
                   urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule",
                   description: "Poodles come in three sizes: standard, miniature, and toy, and are known for their hypoallergenic, curly coat and high intelligence. They are versatile dogs, excelling in obedience and agility. Their playful and active nature, combined with their trainability, makes them great companions for various activities and family settings."
             ),
             Breed(name: "Bulldog",
-                  imageName: "test",
+                  imageName: "buldog",
                   urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule",
                   description: "Bulldogs are medium-sized dogs with a unique wrinkled face and pushed-in nose. Their calm and friendly nature, coupled with a strong, muscular build, makes them excellent companions. They are known for their loyalty and affectionate behavior, often forming strong bonds with their families and doing well in a variety of living situations."
             ),
             Breed(name: "Rottweiler",
-                  imageName: "test",
+                  imageName: "rottweiler",
                   urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule",
                   description: "Rottweilers are powerful and confident dogs with a distinct black and tan coat. They are known for their loyalty and protective nature, making them effective guard dogs and family protectors. They thrive on training and socialization, and with proper care, they are loving, devoted pets who are both strong and gentle."
             ),
             Breed(name: "Yorkshire Terrier",
-                  imageName: "test",
+                  imageName: "terrier",
                   urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule",
                   description: "Yorkshire Terriers, or Yorkies, are small dogs with a long, silky coat and a bold, energetic personality. Despite their small size, they are known for their confidence and vivacity. They make excellent lap dogs and are very affectionate with their families, often developing strong bonds and enjoying a lot of attention and playtime."
-            )
+            ),
+        Breed(name: "Beagle",
+              imageName: "beagle",
+              urlString: "https://local.demandforce.com/b/prairiewindsanimalcliniccalgary/schedule",
+              description: "Beagles are small to medium-sized dogs with a keen sense of smell and an affectionate disposition. Their short coat and expressive eyes make them endearing. They are energetic and curious, making them excellent family pets and great with children. Beagles require regular exercise to manage their high energy levels and love for exploration."
+        )
     ]
     static let catBreeds = [
         Breed(name: "Siamese",

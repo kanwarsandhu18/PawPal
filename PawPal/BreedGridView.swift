@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct BreedGridView: View {
+    let columns : [GridItem] = [GridItem(.flexible()) ,
+                                GridItem(.flexible())
+    ]
+    let breed : breedNames
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            LazyVGrid(columns: columns ){
+                ForEach( breed.Breed == "Dog" ? MockData.dogBreeds : MockData.catBreeds ){ breed in
+                    BreedView(breed:breed)
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    BreedGridView()
+    BreedGridView(breed: Dog)
 }
