@@ -15,19 +15,25 @@ struct BreedGridView: View {
     let breed : breedNames
     var body: some View {
         NavigationView{
-            ScrollView{
-                LazyVGrid(columns: columns ){
-                    ForEach( breed.Breed == "Dog" ? MockData.dogBreeds : MockData.catBreeds ){ breed in
-                        BreedView(breed:breed)
-                            .onTapGesture {
-                                viewModel.selectedBreed = breed
-                                print(viewModel.isDetailSheetOpen)
-                            }
+            VStack{
+                Text("Select your breed")
+                    .font((.system(size: 25, weight: .medium , design: .default)))
+                    .foregroundStyle(.blue)
+                    .padding()
+                ScrollView{
+                    LazyVGrid(columns: columns ){
+                        ForEach( breed.Breed == "Dog" ? MockData.dogBreeds : MockData.catBreeds ){ breed in
+                            BreedView(breed:breed)
+                                .onTapGesture {
+                                    viewModel.selectedBreed = breed
+                                    print(viewModel.isDetailSheetOpen)
+                                }
+                        }
                     }
                 }
-            }
-            .sheet(isPresented: $viewModel.isDetailSheetOpen){
-                BreedDetailView(breed: viewModel.selectedBreed ?? MockData.mockBreed , isShowingDetailView: $viewModel.isDetailSheetOpen )
+                .sheet(isPresented: $viewModel.isDetailSheetOpen){
+                    BreedDetailView(breed: viewModel.selectedBreed ?? MockData.mockBreed , isShowingDetailView: $viewModel.isDetailSheetOpen )
+                }
             }
         }
     }
