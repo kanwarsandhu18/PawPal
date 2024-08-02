@@ -21,6 +21,7 @@
 		E84FA60A2C5C512E00B35CCC /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA6092C5C512E00B35CCC /* BreedDetailView.swift */; };
 		E84FA60C2C5C581400B35CCC /* BookVisitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA60B2C5C581400B35CCC /* BookVisitButton.swift */; };
 		E84FA60E2C5C5CF600B35CCC /* BreedGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA60D2C5C5CF600B35CCC /* BreedGridViewController.swift */; };
+		E84FA6102C5C6B2D00B35CCC /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA60F2C5C6B2D00B35CCC /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E84FA6092C5C512E00B35CCC /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailView.swift; sourceTree = "<group>"; };
 		E84FA60B2C5C581400B35CCC /* BookVisitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookVisitButton.swift; sourceTree = "<group>"; };
 		E84FA60D2C5C5CF600B35CCC /* BreedGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedGridViewController.swift; sourceTree = "<group>"; };
+		E84FA60F2C5C6B2D00B35CCC /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				E84FA6092C5C512E00B35CCC /* BreedDetailView.swift */,
 				E84FA60B2C5C581400B35CCC /* BookVisitButton.swift */,
 				E84FA6032C5C211C00B35CCC /* BreedGridView.swift */,
+				E84FA60F2C5C6B2D00B35CCC /* SafariView.swift */,
 				E84FA60D2C5C5CF600B35CCC /* BreedGridViewController.swift */,
 				E84FA6052C5C213B00B35CCC /* Breed.swift */,
 				E84FA6072C5C24AB00B35CCC /* BreedView.swift */,
@@ -284,6 +287,7 @@
 				E84FA6082C5C24AB00B35CCC /* BreedView.swift in Sources */,
 				E84FA6042C5C211C00B35CCC /* BreedGridView.swift in Sources */,
 				E84FA60A2C5C512E00B35CCC /* BreedDetailView.swift in Sources */,
+				E84FA6102C5C6B2D00B35CCC /* SafariView.swift in Sources */,
 				E84FA5D52C5C034000B35CCC /* PawPalApp.swift in Sources */,
 				E84FA6062C5C213B00B35CCC /* Breed.swift in Sources */,
 				E84FA60C2C5C581400B35CCC /* BookVisitButton.swift in Sources */,

@@ -10,6 +10,7 @@ import SwiftUI
 struct BreedDetailView: View {
     let breed : Breed
     @Binding var isShowingDetailView : Bool
+    @State var isSafariViewControllerShown : Bool = false
     var body: some View {
         VStack{
             HStack(alignment :.bottom){
@@ -30,11 +31,14 @@ struct BreedDetailView: View {
                 .multilineTextAlignment(.center)
             Spacer()
             Button{
-                
+                isSafariViewControllerShown = true
             } label: {
                 BookVisitButton()
             }
         }
+        .fullScreenCover(isPresented: $isSafariViewControllerShown, content: {
+            SafariView(url: URL(string: breed.urlString)!)
+        })
     }
 }
 
