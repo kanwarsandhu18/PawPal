@@ -8,19 +8,27 @@
 import SwiftUI
 
 struct BreedView: View {
-    let breed : Breed
+    let breed: Breed
+    let size: CGFloat?
+
+        init(breed: Breed, size: CGFloat? = 150) {
+            self.breed = breed
+            self.size = size
+        }
     var body: some View {
+        let imageSize = size ?? 150
+        let fontSize = imageSize * 0.12
         VStack{
             Image(breed.imageName)
                 .resizable()
-                .frame(width: 150 , height: 150)
+                .frame(width: imageSize , height: imageSize)
             Text(breed.name)
-                .font((.system(size: 18, weight: .semibold , design: .default)))
+                .font((.system(size: fontSize, weight: .semibold , design: .default)))
         }
         .padding()
     }
 }
 
 #Preview {
-    BreedView(breed: MockData.mockBreed)
+    BreedView(breed: MockData.mockBreed )
 }

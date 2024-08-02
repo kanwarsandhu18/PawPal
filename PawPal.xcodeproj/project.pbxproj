@@ -18,6 +18,9 @@
 		E84FA6042C5C211C00B35CCC /* BreedGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA6032C5C211C00B35CCC /* BreedGridView.swift */; };
 		E84FA6062C5C213B00B35CCC /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA6052C5C213B00B35CCC /* Breed.swift */; };
 		E84FA6082C5C24AB00B35CCC /* BreedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA6072C5C24AB00B35CCC /* BreedView.swift */; };
+		E84FA60A2C5C512E00B35CCC /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA6092C5C512E00B35CCC /* BreedDetailView.swift */; };
+		E84FA60C2C5C581400B35CCC /* BookVisitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA60B2C5C581400B35CCC /* BookVisitButton.swift */; };
+		E84FA60E2C5C5CF600B35CCC /* BreedGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84FA60D2C5C5CF600B35CCC /* BreedGridViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		E84FA6032C5C211C00B35CCC /* BreedGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedGridView.swift; sourceTree = "<group>"; };
 		E84FA6052C5C213B00B35CCC /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		E84FA6072C5C24AB00B35CCC /* BreedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedView.swift; sourceTree = "<group>"; };
+		E84FA6092C5C512E00B35CCC /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailView.swift; sourceTree = "<group>"; };
+		E84FA60B2C5C581400B35CCC /* BookVisitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookVisitButton.swift; sourceTree = "<group>"; };
+		E84FA60D2C5C5CF600B35CCC /* BreedGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedGridViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,10 @@
 			children = (
 				E84FA5D42C5C034000B35CCC /* PawPalApp.swift */,
 				E84FA5D62C5C034000B35CCC /* ContentView.swift */,
+				E84FA6092C5C512E00B35CCC /* BreedDetailView.swift */,
+				E84FA60B2C5C581400B35CCC /* BookVisitButton.swift */,
 				E84FA6032C5C211C00B35CCC /* BreedGridView.swift */,
+				E84FA60D2C5C5CF600B35CCC /* BreedGridViewController.swift */,
 				E84FA6052C5C213B00B35CCC /* Breed.swift */,
 				E84FA6072C5C24AB00B35CCC /* BreedView.swift */,
 				E84FA6012C5C09F600B35CCC /* PetSelection.swift */,
@@ -274,8 +283,11 @@
 				E84FA5D72C5C034000B35CCC /* ContentView.swift in Sources */,
 				E84FA6082C5C24AB00B35CCC /* BreedView.swift in Sources */,
 				E84FA6042C5C211C00B35CCC /* BreedGridView.swift in Sources */,
+				E84FA60A2C5C512E00B35CCC /* BreedDetailView.swift in Sources */,
 				E84FA5D52C5C034000B35CCC /* PawPalApp.swift in Sources */,
 				E84FA6062C5C213B00B35CCC /* Breed.swift in Sources */,
+				E84FA60C2C5C581400B35CCC /* BookVisitButton.swift in Sources */,
+				E84FA60E2C5C5CF600B35CCC /* BreedGridViewController.swift in Sources */,
 				E84FA6022C5C09F600B35CCC /* PetSelection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
